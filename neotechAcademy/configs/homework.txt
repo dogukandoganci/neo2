@@ -1,0 +1,4 @@
+ browser= firefox
+ url= www.neotech.com
+ username= neo
+ password= Admin@1

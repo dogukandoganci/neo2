@@ -1,0 +1,32 @@
+package com.neotech.lesson24;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		System.out.println("-----Student object; Student");
+		
+		Student student =new Student();
+		student.study();
+		student.doHomework();
+		//student.getJob(); //can't use because getJob is inside the child class
+		
+		System.out.println("-----Neotech Student object; Student");
+		NeotechStudent neotech=new NeotechStudent();
+		neotech.study();
+		neotech.doHomework();
+		neotech.getJob();
+		
+		System.out.println("-----Neotech Student object; Student");
+		Student st1; //declaring a variable of type Student
+		st1=new NeotechStudent();  // assigning  an object of the child class
+		
+		Student st2=new CollegeStudent(); //up-casting
+		st1.study(); //run time polymorphism
+		st2.study(); // acts like CollegeStudent
+		
+	
+	
+	
+	}
+
+}
